@@ -4,209 +4,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".insureList">
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="205dp" />
+    tools:context="sise.tecnico.mc.project.insureapp.InsureList"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin">
 
     <LinearLayout
-        android:layout_width="400dp"
-        android:layout_height="497dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1"
+        android:layout_alignParentLeft="true">
 
-        <LinearLayout
+        <TextView
+            android:text="@string/my_claims"
             android:layout_width="match_parent"
-            android:layout_height="29dp"
-            android:orientation="horizontal"></LinearLayout>
+            android:layout_height="wrap_content"
+            android:id="@+id/list_claims_title"
+            android:textStyle="normal|bold"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
 
-        <LinearLayout
+        <ListView
+            android:id="@+id/list_claims_list"
             android:layout_width="match_parent"
-            android:layout_height="51dp"
-            android:orientation="horizontal">
+            android:layout_height="0dp"
+            android:layout_weight="1" />
 
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
-
-            <EditText
-                android:id="@+id/editText2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
-
-            <Space
-                android:layout_width="56dp"
-                android:layout_height="match_parent" />
-        </LinearLayout>
-
-        <RelativeLayout
-            android:layout_width="400dp"
-            android:layout_height="240dp"
-            android:padding="10dp">
-
-            <TableLayout
-                android:id="@+id/tbl_test"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="1dp"
-                android:layout_marginBottom="1dp"
-                android:background="#000000"
-                android:orientation="vertical"
-                android:stretchColumns="1">
-
-                <TableRow
-                    android:layout_margin="1dp"
-                    android:background="#ffffff">
-
-                    <TextView
-                        android:layout_column="0"
-                        android:text="Col 1" />
-
-                    <TextView
-                        android:layout_column="1"
-                        android:text="Col 2" />
-
-                    <TextView
-                        android:layout_column="2"
-                        android:text="Col 3" />
-
-                    <TextView
-                        android:layout_column="3"
-                        android:text="Col 4" />
-
-                </TableRow>
-
-                <TableRow
-                    android:layout_marginLeft="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_marginBottom="1dp"
-                    android:background="#ffffff">
-
-                    <TextView
-                        android:layout_column="0"
-                        android:text="r1" />
-
-                    <TextView
-                        android:layout_column="1"
-                        android:text="padding right 0dp" />
-
-                    <Button android:text="@string/Bottom_Edit" />
-
-                    <Button android:text="@string/Bottom_Delete" />
-
-                </TableRow>
-
-                <TableRow
-                    android:layout_marginLeft="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_marginBottom="1dp"
-                    android:background="#ffffff"
-                    android:paddingRight="2dp">
-
-                    <TextView
-                        android:layout_column="0"
-                        android:text="r2" />
-
-                    <TextView
-                        android:layout_column="1"
-                        android:text="padding right 1dp" />
-
-                    <Button android:text="@string/Bottom_Edit" />
-
-                    <Button android:text="@string/Bottom_Delete" />
-
-                </TableRow>
-
-                <TableRow
-                    android:layout_marginLeft="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_marginBottom="1dp"
-                    android:background="#ffffff"
-                    android:paddingRight="3dp">
-
-                    <TextView
-                        android:layout_column="0"
-                        android:text="r3" />
-
-                    <TextView
-                        android:layout_column="1"
-                        android:text="padding right 2dp" />
-
-                    <Button android:text="@string/Bottom_Edit" />
-
-                    <Button android:text="@string/Bottom_Delete" />
-
-                </TableRow>
-
-                <TableRow
-                    android:layout_marginLeft="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_marginBottom="1dp"
-                    android:background="#ffffff"
-                    android:paddingRight="4dp">
-
-                    <TextView
-                        android:layout_column="0"
-                        android:text="r4" />
-
-                    <TextView
-                        android:layout_column="1"
-                        android:text="padding right 3dp" />
-
-                    <Button android:text="@string/Bottom_Edit" />
-
-                    <Button android:text="@string/Bottom_Delete" />
-
-                </TableRow>
-
-            </TableLayout>
-
-        </RelativeLayout>
-
-        <LinearLayout
-            android:layout_width="337dp"
-            android:layout_height="147dp"
-            android:orientation="vertical">
-
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
-
-            <Button
-                android:id="@+id/button6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/Bottom_Menu" />
-
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
-        </LinearLayout>
-
+        <Button
+            android:id="@+id/list_claims_btn_new_note"
+            style="@android:style/Widget.Button.Inset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/list_claim_btn_new_claim" />
     </LinearLayout>
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar2"
-        android:layout_width="470dp"
-        android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

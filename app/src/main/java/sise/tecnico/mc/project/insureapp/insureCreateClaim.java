@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class insureProfile extends AppCompatActivity {
+public class insureCreateClaim extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_insure_profile);
+        setContentView(R.layout.activity_insure_create_claim);
     }
 }

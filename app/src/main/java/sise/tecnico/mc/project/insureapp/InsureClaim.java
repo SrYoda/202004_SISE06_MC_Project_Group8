@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class insureClaim extends AppCompatActivity {
+public class InsureClaim extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

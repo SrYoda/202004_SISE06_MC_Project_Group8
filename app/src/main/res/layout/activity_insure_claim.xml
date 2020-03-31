@@ -4,15 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".insureClaim">
+    tools:context="sise.tecnico.mc.project.insureapp.InsureClaim"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:id="@+id/read_note_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/read_claim_title"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:paddingVertical="@dimen/activity_vertical_margin"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/read_note_text"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/read_claim_text"
+            android:layout_weight="0.98"
+            android:paddingVertical="@dimen/activity_vertical_margin"
+            />
+
+        <Button
+            android:text="@string/read_claim_btn_done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/read_note_btn_done"
+            style="?android:attr/buttonBarButtonStyle"
+            />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -20,5 +20,27 @@
 
     <string name="Claim_ID">ClaimID</string>
 
+    <string name="my_claims">My Claims</string>
+    <string name="list_claim_btn_new_claim">New Claim</string>
+    <string name="list_claim">List Claim</string>
+    <string name="read_claim">Read Claim</string>
+    <string name="new_claim">New Claim</string>
+    <string name="insert_claim_hint_insert_title">Insert Claim Title</string>
+    <string name="new_claim_hint_insert_note">Texto</string>
+
+    <string name="new_claim_Validation_Date">Validation Date</string>
+    <string name="new_claim_Title_Header">Title/Header</string>
+    <string name="new_claim_Processing_Date">Processing Date</string>
+    <string name="new_claim_Vehicle_registration_plate">Vehicle registration plate</string>
+    <string name="new_claim_Status">Status</string>
+    <string name="new_claim_Description">Description</string>
+
+
+    <string name="new_claim_btn_ok">Ok</string>
+    <string name="new_claim_btn_cancel">Cancel</string>
+    <string name="read_claim_title">Claim Title</string>
+    <string name="read_claim_text">Claim text</string>
+    <string name="read_claim_btn_done">Done</string>
+
 
 </resources>
